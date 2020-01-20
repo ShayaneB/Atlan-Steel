@@ -1,0 +1,97 @@
+{% load static %}
+
+<div class="wrapper" id="wrapper">
+        <div class="offcanvas-pusher">
+            <div class="content-wrapper">
+              <div class="container">
+                  <div class="row">
+                      <section class="header">
+                          <header class="header-wrapper">
+                              <div class="header-top">
+                                  <div class="row">
+                                      <div class="col-md-4 col-xs-12 col-sm-3">
+                                          <div class="logo">
+                                              <a title="Atlan Steels" href="{% url 'index' %}">
+                                                  <img src="{% static 'img/logo.png' %}" alt="Atlan Steel">
+                                              </a>
+                                          </div>
+                                        </div>
+                                <!-- <div class="col-md-6 col-sm-5">
+                                      <div class="location">
+                                            <p>Pithampur Industrial Area, <br>
+                                                Pithampur, Madhya Pradesh.</p>
+                                        </div> 
+                                    </div>
+                                      <div class="col-md-2 col-sm-4">
+                                          <div class="phone">
+                                              <p>Call us!</p>
+                                              <strong>1-800-987-654</strong>
+                                          </div>										
+                                      </div> -->  
+                              <div class="main-nav-bar">   
+                                      <div class="navbar">
+                                          <div class="navbar-header navbar-right pull-left">
+                                              <!-- offcanvas-trigger-effects -->
+                                              <div id="offcanvas-trigger-effects" class="offcanvas">
+                                                  <button type="button" class="navbar-toggle visible-xs" data-toggle="offcanvas"
+                                                          data-target=".navbar-collapse" data-placement="left" data-effect="offcanvas-effect">
+                                                      <i class="fa fa-bars"></i>
+                                                  </button>
+                                              </div>
+                                            </div>
+                                        </div>
+                                  <!-- offcanvas-trigger-effects -->
+                                         <!-- navbar-collapse -->
+                                          <nav role="navigation" class="collapse navbar-collapse navbar main-nav">
+                                              <ul class="nav navbar-nav navbar-left">
+                                                <li 
+                                                {% if '/' == request.path %}
+                                                class='nav-item active'
+                                                {% else %}
+                                                class='nav-item'
+                                                {% endif %}
+                                                >
+                                                <a href="{% url 'index' %}">Home</a>
+                                            </li>
+                                                <li
+                                                {% if '/about' == request.path %}
+                                                class='nav-item active'
+                                                {% else %}
+                                                class='nav-item'
+                                                {% endif %}
+                                                >
+                                                <a href="{% url 'about' %}">About Us</a>
+                                            </li>
+                                                <li class="dropdown">
+                                                <a href="#">Services</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="{% url 'Slabs' %}">MS Slabs</a></li>
+                                                            <li><a href="{% url 'Plates' %}">HR MS Plates</a></li>
+                                                            <li><a href="{% url 'Coils' %}">HR MS Coils</a></li>
+                                                      </ul>
+                                                  </li>
+                                             <!-- <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                                              </ul>
+                                               /navbar-nav -->
+
+                                              <!-- <div class="navbar-right">
+                                                  <div class="header-search">
+                                                      <form>
+                                                         <input type="search" name="search" placeholder="Search">
+                                                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                      </form>
+
+                                                  </div>					            
+                                              </div> -->
+                                          </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- /navbar-collapse -->
+                                      <!-- /navbar -->
+                              <!-- .main-nav-bar -->
+                          </header>
+                      </section>
+                    </div>
+                      <!--End .header -->  
+                    </div>									            

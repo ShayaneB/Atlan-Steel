@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- .main-nav-bar -->
+<div class="breadcrumb-area">
+	<div class="col-md-6 col-xs-12 col-sm-6">
+		<ul class="breadcrumb">
+		   <li><a href="{% static 'index.html' %}">Home</a></li>
+		   <li><a href="#">Services</a></li>
+		   <li class="active">HR MS Coils</li>
+		</ul>
+	</div>
+	<div class="col-md-6 col-xs-12 col-sm-6">
+		<div class="header-social">
+			<ul>
+				<li><a href=""><i class="fa fa-facebook"></i></a></li>
+				<li><a href=""><i class="fa fa-twitter"></i></a></li>
+				<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- .breadcrumb-area -->
+</header>
+</section>
+
+<div class="row">
+<div class="inner-content">
+<div class="row">
+<div class="col-md-3">
+	<div class="left-sidebar">
+		<h4>Services</h4>
+		<ul>
+			<li><a href="{% url 'Slabs' %}">MS Slabs</a></li>
+			<li><a href="{% url 'Plates' %}">HR MS Plates</a></li>
+			<li><a href="{% url 'Coils' %}">HR MS Coils</a></li>
+		</ul>
+	</div>
+</div>
+									<div class="col-md-9">
+										<div class="single-description">
+											<h1>HR MS Coils</h1>
+											<img src="{% static 'img/coils.jpg' %}" alt="">
+											<p>HR MS coils are even flatter/thinner than plates and barring the above uses it can be used in more specified areas such as various tools and machinery, steel tubes, 
+												electronics and other home appliances, architectural/design purposes, tins and cans etc.
+											</p>
+										</div>
+									</div>
+					<!--inner content -->
+						</div>
+						<!--section row -->
+					</div>
+				</div>
+{% endblock %}							

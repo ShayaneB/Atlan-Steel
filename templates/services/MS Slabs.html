@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- .main-nav-bar -->
+<div class="breadcrumb-area">
+	<div class="col-md-6 col-xs-12 col-sm-6">
+		<ul class="breadcrumb">
+		   <li><a href="{% static 'index.html' %}">Home</a></li>
+		   <li><a href="#">Services</a></li>
+		   <li class="active">MS Slabs</li>
+		</ul>
+	</div>
+	<div class="col-md-6 col-xs-12 col-sm-6">
+		<div class="header-social">
+			<ul>
+				<li><a href=""><i class="fa fa-facebook"></i></a></li>
+				<li><a href=""><i class="fa fa-twitter"></i></a></li>
+				<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+				<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- .breadcrumb-area -->
+</header>
+</section>
+
+<div class="row">
+<div class="inner-content">
+<div class="row">
+<div class="col-md-3">
+	<div class="left-sidebar">
+		<h4>Services</h4>
+		<ul>
+			<li><a href="{% url 'Slabs' %}">MS Slabs</a></li>
+			<li><a href="{% url 'Plates' %}">HR MS Plates</a></li>
+			<li><a href="{% url 'Coils' %}">HR MS Coils</a></li>
+		</ul>
+	</div>
+</div>
+									<div class="col-md-9">
+										<div class="single-description">
+											<h1>MS Slabs</h1>
+											<img src="{% static 'img/pipe.jpg' %}" alt="">
+											<p>MS Slabs (like MS slab ingots) can either be sold directly to other businesses/factories for further rolling or can be rolled by us to produce MS plates and coils, 
+												depending on market scenario, demand, and price at that time.
+											</p>
+											<p>The Basic features of MS Slabs are:
+												</p>
+											<h2>Malleable</h2>
+											<p>
+												Can be beaten into a thin sheet easily without breaking or cracking.
+												Thus, make the steel workable and mouldable.
+											</p>
+											<h2>Ductile</h2>
+											<p>
+												This feature make flexible as it can be beaten into a thin wire. 
+												It makes the end product more strong. 
+											</p>
+											<h2>Semi-Finished, Rectangular and Flat</h2>
+											<p>
+												Wide rectangular shaped hot-rolls from an ingot or strand cast.
+												They can be used for manufacturing of any flat steel product.  
+											</p>
+											<h2>Corrosive</h2>
+											<p>
+												As it is not stainless, thus it is corrosive. 
+											</p>
+										</div>
+									</div>
+							<!--inner content -->
+						</div>
+					</div>
+				</div>
+{% endblock %}							
